@@ -1,0 +1,23 @@
+#customers
+{
+    font-family: comic sans ms;
+    border-collapse: collapse;
+    width:70%;
+}
+#customers th
+{
+    background-color: #44ff55;
+}
+#customers tr
+{
+    background-color: cyan;
+}
+#customers tr:nth-child(odd)
+{
+    background-color: #ddee55;
+}
+#customers tr:hover
+{
+    background-color: pink;
+    color:blue
+}
