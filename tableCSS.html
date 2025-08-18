@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: pink;
+            }
+            .container
+            {
+            padding: 50px  ;
+            padding-left: 30px;
+            width: 100%;
+            background-color: lightblue;
+            }
+            hr{
+                border: 3px solid red;
+                margin-top: 50px;
+
+            }
+            .btn
+            {
+                background-color: green;
+                color: white;
+                opacity: 70%;
+                border-radius: 30%;
+                width:20%;
+            }
+            input[type=text]
+            {
+                width:90%;
+                padding: 15px;
+                margin-top: 20px;
+                border: none;
+                border-radius: 30%;
+            }
+            input[type=password]
+            {
+                width:90%;
+                padding: 15px;
+                margin-top: 20px;
+                border: none;
+                
+            }
+            input[type=text]:hover
+            {
+                background-color: gray;
+            }
+            input[type=text]:focus
+            {
+                background-color:cyan;
+            }
+               input[type=password]:hover
+            {
+                background-color: red;
+            }
+            input[type=password]:focus
+            {
+                background-color:yellow;
+            }
+            #bid
+            {
+                font-family: comic sans ms;
+            }
+           
+
+        </style>
+    </head>
+    <body>
+        <marquee>ADD BOOK</marquee>
+        <form>
+            <div class="container">
+                <center>
+                    <hr>
+                    <label id="bk1">Book ID</label>
+                    <input type="text"name="id" id="bid" placeholder="Book ID"/>
+                    <br>
+                    <label >Title</label>
+                    <input type="text"name="title" id="bid" placeholder="Book Title"/>
+                    <br>
+                    <label >Author</label>
+                    <input type="text"name="Author" id="bid" placeholder="Book Author"/>
+                    <br>
+                    <label >Status</label>
+                    <input type="text"name="Status" id="bid" placeholder="Status of the Book "/>
+                    <br>
+                    <label >Password</label>
+                    <input type="password"name="password" id="bid" placeholder="Book Password"/>
+                    <br>
+                  <input type="submit"  class="btn" value="ADD BOOK"/>
+                  <br>
+                </center>
+            </div>
+        </form>
+    </body>
+</html>
