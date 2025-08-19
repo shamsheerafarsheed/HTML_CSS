@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+var v1,v2;
+function operation()
+{
+    v1=parseInt(document.getElementById("n1").value);
+     v2=parseInt(document.getElementById("n2").value);
+    var res1=v1+v2;
+
+    document.write("Addition"+res1+"<br>");
+     var res2=v1-v2;
+
+    document.write("Substraction"+res2+"<br>");
+
+
+}
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for ="n1">Number1</label>
+            <input type="text" id="n1" name="n1"/>
+            <br>
+             <label for ="n2">Number2</label>
+            <input type="text" id="n2" name="n2"/>
+            <br>
+            <input type="submit" value="SUBMIT" onclick="operation();"/>
+        </form>
+    </body>
+</html>

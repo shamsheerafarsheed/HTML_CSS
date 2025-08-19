@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+var v1;
+function table()
+{
+    v1=parseInt(document.getElementById("n1").value);
+    var i;
+    for(i=1;i<=20;i++)
+{
+    document.write(v1+"X"+i+"="+(v1*i)+"<br>");
+}
+}
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for ="n1">Number</label>
+            <input type="text" id="n1" name="n1"/>
+            <br>
+            <input type="submit" value="Generate Table" onclick="table();"/>
+        </form>
+    </body>
+</html>

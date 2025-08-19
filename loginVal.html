@@ -1,0 +1,132 @@
+<html>
+<head>
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+
+<script>
+function validateform()
+{
+       let fn =document.getElementById("firstname").value;
+        let ln =document.getElementById("lastname").value;
+        let phnno =document.getElementById("phone").value;
+        let mail =document.getElementById("mail").value;
+                
+        let pwd1=document.getElementById("password1").value;
+        let pwd2=document.getElementById("password2").value;
+                console.log(password1);
+                console.log(password2);
+                console.log("password1");
+                if(fn=null || fn =="")
+                {
+                  alert("Enter First Name");
+                  return false; 
+                }
+                else if(ln=null || ln =="")
+                {
+                  alert("Enter last Name");
+                  return false; 
+                }
+                else if(pwd1!=pwd2)
+        {
+                    
+                   alert("check u r password");
+           return false;
+        
+        }
+        else
+          {
+            return true;
+          
+          }
+        
+      
+        }  
+</script>
+</head>
+<body>  
+<form    action="signup"  method="POST"  onsubmit="return validateform()"  enctype = "multipart/form-data">  
+  <div class="container">  
+ <h1> ADMIN REGISTERATION FORM </h1> 
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" id="firstname" placeholder= "Firstname" size="15"  />   
+  
+<label> Lastname: </label>    
+<input type="text" name="lastname" id="lastname" placeholder="Lastname" size="15" /> 
+  
+  <label for="email"><b>Addres</b></label>  
+ <input type="text" id="add" placeholder="Enter Addres Here.." name="add" > <br>
+ 
+<label>   
+Phone :  
+</label>  
+ 
+<input type="text" name="phone" id="phone" placeholder="phone no." size="10"/ >  
+
+ 
+  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" id="mail" placeholder="Enter Email" name="mail" >
+ 
+ <label for="email"><b>userID</b></label>  
+ <input type="text" placeholder="Enter userID" name="user_Id" id="user_Id" >   
+  
+    <label for="psw" ><b>Password</b></label>  
+    <input type="text" placeholder="Enter Password" name="password1" id="password1" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="text" placeholder="Retype Password" name="psw-repeat"  id="password2" required> 
+    
+    
+    <label for="pict"><b>Image</b></label>  
+ <input type="file" placeholder="add u r pic " name="pic" id="pic" >   
+    <button type="submit" class="registerbtn"  >Register</button> 
+    
+    
+    
+      
+     
+</form>  
+</body>  
+</html>
