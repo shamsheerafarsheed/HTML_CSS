@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            h1,h3
+            {
+                color:black;
+                font-size: 40px;
+                text-align: center;
+            }
+            table{
+                margin-left: 650px;
+                border: 2px solid white;
+                background-color: beige;
+            }
+            td{
+                padding: 10px;
+                border: 2px solid white;
+            }
+            #btn
+            {
+                margin-left: 750px;
+            }
+        </style>
+        <script>
+       function show()
+       {
+        var fname=document.getElementById("txtb1").value;
+        var lname=document.getElementById("txtb2").value;
+        var age=document.getElementById("age").value;
+        var Address=document.getElementById("adrs").value;
+        var Gender=document.getElementById("gen").value;
+        confirm("You have Entered:"+"\n Name:"+fname+" "+lname+" "+"\nAge:"+age+"\n address:"+Address+"\n Do you want to continue with these Details???");
+
+       }
+       function changeColor(val)
+       {
+         if((val.value=="")||(val.value==null))
+         {
+            val.style.background="Yellow";
+         }
+         else{
+             val.style.background="green";
+         }
+       }
+        </script>
+    </head>
+    <body>
+        <h1>User Registertion</h1>
+        <h3>
+        please fill the Following Details and Get Registered!!!
+        </h3>
+        <br>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type=" text" name="name1" id="txtb1" onblur="changeColor(this);"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type=" text" name="name2" id="txtb2" onblur="changeColor(this);"></td>
+            </tr>
+            <tr>
+                <td>age:</td>
+                <td><input type=" text" name="age" id="age" onblur="changeColor(this);"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type=" text" name="adrs" id="adrs" onblur="changeColor(this);"></td>
+            </tr>
+<tr>
+                <td>Gender:</td>
+                <td><select name="gender" id="gen"></select>
+                <option value="Male">Male</option>
+             <option value="feMale">Female</option></td>
+            </tr>
+        </table>
+        <input type="button" id="btn" value= "Register!!!"onclick="show();">
+    </body> 
+</html>
